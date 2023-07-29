@@ -1,5 +1,16 @@
-export default function App() {
+// src/App.tsx
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import WeekView from "./WeekView";
+
+const App: React.FC = () => {
   return (
-    <h1 className="text-center text-3xl font-bold underline">Hello world!</h1>
+    <Router>
+      <Switch>
+        <Route path="/" component={WeekView} />
+      </Switch>
+    </Router>
   );
-}
+};
+
+export default App;
