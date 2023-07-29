@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { getEventsFromDB } from "./indexedDb";
 import { generateStubData } from "./Data";
-import { format, addDays } from "date-fns"; // You can use date-fns library for date manipulation
+import { format, addDays } from "date-fns";
 
 const WeekView: React.FC = () => {
   const [events, setEvents] = useState<any[]>([]);
